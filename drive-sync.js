@@ -87,7 +87,7 @@ async function readSnapshot(token,file){
 }
 async function writeSnapshot(token,file,snapshot){
   const json=JSON.stringify(snapshot);let result;
-  if(file){
+  if(file?.id){
     result=await driveRequest(`https://www.googleapis.com/upload/drive/v3/files/${encodeURIComponent(file.id)}?uploadType=media&fields=id,name`,token,{method:'PATCH',headers:{'Content-Type':'application/json; charset=UTF-8'},body:json});
   }else{
     const boundary=`daytrace_${crypto.randomUUID().replaceAll('-','')}`;
