@@ -4,7 +4,7 @@
 
 ## 起動
 
-ES modules、IndexedDB、Service Workerを使うため、プロジェクトのルートでローカルHTTPサーバーを起動してブラウザで開きます。
+ES modules、IndexedDB、Service Workerを使うため、プロジェクトのルートでローカルHTTPサーバーを起動してブラウザで開きます。GitHub Pagesにアップロードするときは、HTML/CSSと4つのJavaScriptファイルをすべてリポジトリのルートへ置いてください。
 
 ```powershell
 node serve.mjs
